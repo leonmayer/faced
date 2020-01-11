@@ -10,7 +10,8 @@ from faced.utils import iou
 class FaceDetector(object):
 
     def __init__(self):
-        self.load_model(os.path.join(MODELS_PATH, "yolov3_irrgb.pb"))
+        #self.load_model(os.path.join(MODELS_PATH, "yolov3_irrgb.pb"))
+        self.load_model("/content/gdrive/My Drive/darknetdata/tensorflow/yolov3_irrgb.pb"))
         self.load_aux_vars()
 
         self.face_corrector = FaceCorrector()
