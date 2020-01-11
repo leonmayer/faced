@@ -10,7 +10,7 @@ from faced.utils import iou
 class FaceDetector(object):
 
     def __init__(self):
-        self.load_model(os.path.join(MODELS_PATH, "face_yolo.pb"))
+        self.load_model(os.path.join(MODELS_PATH, "yolov3.pb"))
         self.load_aux_vars()
 
         self.face_corrector = FaceCorrector()
